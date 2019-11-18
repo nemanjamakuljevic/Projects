@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+     <title>Fitnes tracker</title>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="initial-scale=1.0">
+     <link rel="stylesheet" href="style.css" type="text/css">
+     <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+    </head>
+<body>
+    <!-- week -->
+
+    <div class="content" id="week">
+        <div class="header">
+            <h2>Welcome!</h2>
+            <span>Overview of your activity</span>
+        </div>
+        <div class="row-days">
+            <div class="day">
+                <span>MON</span>
+                <span>10</span>
+            </div>
+            <div class="day">
+                <span>TUE</span>
+                <span>11</span>
+            </div>
+            <div class="day">
+                <span>WED</span>
+                <span>12</span>
+            </div>
+            <div class="day">
+                <span>THU</span>
+                <span>13</span>
+            </div>
+            <div class="day">
+                <span>FRI</span>
+                <span>14</span>
+            </div>
+        </div>
+        <div class="activity">
+            <div class="material">
+                    <i class="icon ion-md-alarm"></i>
+            </div>
+            <div class="text">
+                <span>Activity</span>
+                <span>Average</span>
+            </div>
+            <div class="number">
+                <div class="total-time">
+                    <span id="weekTotalTime">6h 40min</span>
+                </div>
+            </div>
+        </div>
+        <div class="steps">
+                <div class="material">
+                    <i class="icon ion-md-walk"></i>
+                </div>
+            </div>
+            <div class="text">
+                <span>Steps</span>
+                <span>Total</span>
+            </div>
+            <div class="number">
+                <div class="total-steps">
+                    <span id="weekTotalSteps">7,540</span>
+                </div>
+            </div>
+        </div>
+        <div class="calories">
+            <div class="material">
+                    <i class="icon ion-md-flame"></i>
+            </div>
+            <div class="text">
+                <span>Calories</span>
+                <span>Total Burned</span>
+            </div>
+            <div class="number">
+                <span id="weekTotalCal">340</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- one day-->
+    <div class="content" id="day">
+        <div class="header-day">
+            <div class="material">
+                <i class="icon ion-md-arrow"></i>
+            </div>
+            <div class="text-day">
+                <h2>Tuesday</h2>
+                <span>June 10th</span>
+            </div>
+            <div class="row-days">
+                    <div class="day">
+					<a href="javascript:void(0)" onclick="clickedDateChange(10);">click me</a>
+                        <span>MON</span>
+                        <span>10</span>
+                    </div>
+                    <div class="day">
+					<a href="javascript:void(0)" onclick="clickedDateChange(11);">click me</a>
+                        <span>TUE</span>
+                        <span>11</span>
+                    </div>
+                    <div class="day">
+					<a href="javascript:void(0)" onclick="clickedDateChange(12);">click me</a>
+                        <span>WED</span>
+                        <span>12</span>
+                    </div>
+                    <div class="day">
+					<a href="javascript:void(0)" onclick="clickedDateChange(13);">click me</a>
+                        <span>THU</span>
+                        <span>13</span>
+                    </div>
+                    <div class="day">
+					<a href="javascript:void(0)" onclick="clickedDateChange(14);">click me</a>
+                        <span>FRI</span>
+                        <span>14</span>
+                    </div>
+            </div>
+            <div class="data-day">
+                <div class="circle">
+                    <i class="icon ion-md-walk"></i>
+                </div>
+                <div class="steps-data">
+                    <p>Steps</p>
+                    <span>7,542</span>
+                </div>
+                <div class="steps-data">
+                    <p>Very good</p>
+                    <span>Keep going!</span>
+                </div>
+                <div class="bottom">
+                    <div class="bottom-data">
+                        <span>km</span>
+                        <span>4.2</span>
+                    </div>
+                    <div class="bottom-data">
+                        <span>cal</span>
+                        <span>315</span>
+                    </div>
+                    <div class="bottom-data">
+                        <span>hours</span>
+                        <span>4</span>
+                    </div>
+                </div>
+            </div>
+         </div>
+    </div> 
+
+
+
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+ <script src="app.js"></script>
+
+
+
+</body>
+</html>
