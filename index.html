@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Slider</title>
+    
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.3.2/swiper-bundle.min.css" integrity="sha512-Y1c7KsgMNtf7pIhrj/Ul2LhutImFYr+TsCmjB8mGAk+cgG1Vm8U1g7tvfmRr6yD5nds03Qgc6Mcb86MBKu1Llg==" crossorigin="anonymous" referrerpolicy="no-referrer" />    
+    <link rel="stylesheet" href="style.css">
+</head>
+  <body>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+              <div class="imgBx">
+                  <img src="seward.JPG">
+              </div>
+              <div class="content">
+                  <h2>Nemanja Makuljevic<br><span>Seward</span></h2>
+              </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="imgBx">
+                <img src="glacier.JPG">
+            </div>
+            <div class="content">
+                <h2>Nemanja Makuljevic<br><span>Portage Glacier</span></h2>
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="imgBx">
+                <img src="autumn.JPG">
+            </div>
+            <div class="content">
+                <h2>Nemanja Makuljevic<br><span>Anchorage</span></h2>
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="imgBx">
+                <img src="anchorage.jpg">
+            </div>
+            <div class="content">
+                <h2>Nemanja Makuljevic<br><span>Anchorage-downtown</span></h2>
+            </div>
+        </div>
+        </div>
+      </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.3.2/swiper-bundle.min.js" integrity="sha512-+z66PuMP/eeemN2MgRhPvI3G15FOBbsp5NcCJBojg6dZBEFL0Zoi0PEGkhjubEcQF7N1EpTX15LZvfuw+Ej95Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+    <script type="text/javascript">
+        var swiper = new Swiper('.swiper-container', {
+            effect: 'cube',
+            grabCursor: true,
+            cubeEffect: {
+              shadow: true,
+              slideShadows: true,
+              shadowOffset: 20,
+              shadowScale: 0.94,
+            }
+          });
+    </script>
+  </body>
+</html>
